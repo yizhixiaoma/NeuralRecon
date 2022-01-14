@@ -3,14 +3,15 @@ BATCH_SIZE: 1
 SAVE_SCENE_MESH: True
 SAVE_INCREMENTAL: False
 VIS_INCREMENTAL: False
-REDUCE_GPU_MEM: True  # Drastically reduces GPU memory and will slow down inference a bit.
+REDUCE_GPU_MEM: False  # Drastically reduces GPU memory and will slow down inference a bit.
 LOGDIR: './checkpoints'
 SAVE_FREQ: 1
 MODE: 'test'
 
 TEST:
   # Change your own data path here
-  PATH: '/home/sunjiaming/Repositories/NeuralFusion/data/neucon_tianren_demo/tianren_zihao'
+  # PATH: '/home/yfeng/NeuralRecon_cpu/neucon_demodata_b5f1/neucon_demodata_b5f1'
+  PATH: '/home/yfeng/NeuralRecon_cpu/NeuralRecon_2022-01-07T09-45-03'
   N_VIEWS: 9
   N_WORKERS: 1
 
@@ -35,4 +36,5 @@ MODEL:
 
   THRESHOLDS: [0, 0, 0]
   POS_WEIGHT: 1.5
+
 
