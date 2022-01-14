@@ -1,6 +1,14 @@
 # An Unofficial CPU Demo Implementation of NeuralRecon
 Thin is an unofficial CPU Demo Implementation of NeuralRecon
 
+NeuralRecon: Real-Time Coherent 3D Reconstruction from Monocular Video
+### [Project Page](https://zju3dv.github.io/neuralrecon) | [Paper](https://arxiv.org/pdf/2104.00681.pdf)
+<br/>
+
+> NeuralRecon: Real-Time Coherent 3D Reconstruction from Monocular Video  
+> [Jiaming Sun](https://jiamingsun.ml)<sup>\*</sup>, [Yiming Xie](https://ymingxie.github.io)<sup>\*</sup>, [Linghao Chen](https://github.com/f-sky), [Xiaowei Zhou](http://www.cad.zju.edu.cn/home/xzhou/), [Hujun Bao](http://www.cad.zju.edu.cn/bao/)  
+> CVPR 2021 (Oral Presentation and Best Paper Candidate)
+
 # Real-time Demo with Custom ARKit Data
 In this tutorial we introduce the real-time demo of NeuralRecon running with self-captured ARKit data. If you don't want to take the effort capturing your own data, you can download the [example data](https://drive.google.com/file/d/1i7yDY-oautHgwrDPUrB7BuZytiIYhxfY/view?usp=sharing) and skip step 1.
 
