@@ -1,7 +1,7 @@
 # An Unofficial CPU Demo Implementation of NeuralRecon
-Thin is an unofficial CPU Demo Implementation of NeuralRecon
+Thin is an unofficial CPU Demo Implementation of NeuralRecon.
 
-NeuralRecon: Real-Time Coherent 3D Reconstruction from Monocular Video
+"NeuralRecon: Real-Time Coherent 3D Reconstruction from Monocular Video"
 ### [Project Page](https://zju3dv.github.io/neuralrecon) | [Paper](https://arxiv.org/pdf/2104.00681.pdf)
 <br/>
 
