@@ -48,15 +48,15 @@ data_loader = DataLoader(test_dataset, cfg.BATCH_SIZE, shuffle=False, num_worker
 
 # model
 logger.info("Initializing the model on GPU...")
-model = NeuralRecon(cfg).cuda().eval()
-model = torch.nn.DataParallel(model, device_ids=[0])
+model = NeuralRecon(cfg).eval() #test_yanfei cuda().eval()
+model = torch.nn.DataParallel(model) #test_yanfei , device_ids=[0])
 
 # use the latest checkpoint file
 saved_models = [fn for fn in os.listdir(cfg.LOGDIR) if fn.endswith(".ckpt")]
 saved_models = sorted(saved_models, key=lambda x: int(x.split('_')[-1].split('.')[0]))
 loadckpt = os.path.join(cfg.LOGDIR, saved_models[-1])
 logger.info("Resuming from " + str(loadckpt))
-state_dict = torch.load(loadckpt)
+state_dict = torch.load(loadckpt, map_location='cpu') #test_yanfei
 model.load_state_dict(state_dict['model'], strict=False)
 epoch_idx = state_dict['epoch']
 save_mesh_scene = SaveScene(cfg)
@@ -100,7 +100,7 @@ with torch.no_grad():
             """
             save_mesh_scene.save_scene_eval(epoch_idx, outputs)
         
-        gpu_mem_usage.append(torch.cuda.memory_reserved())
+        # gpu_mem_usage.append(torch.cuda.memory_reserved())
         
 summary_text = f"""
 Summary:
