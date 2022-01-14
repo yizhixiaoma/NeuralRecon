@@ -1,3 +1,5 @@
+# An Unofficial CPU Demo Implementation of NeuralRecon
+Thin is an unofficial CPU Demo Implementation of NeuralRecon
 
 # Real-time Demo with Custom ARKit Data
 In this tutorial we introduce the real-time demo of NeuralRecon running with self-captured ARKit data. If you don't want to take the effort capturing your own data, you can download the [example data](https://drive.google.com/file/d/1i7yDY-oautHgwrDPUrB7BuZytiIYhxfY/view?usp=sharing) and skip step 1.
